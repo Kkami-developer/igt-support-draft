@@ -110,6 +110,9 @@ img.ph{display:block;width:100%;max-width:100%;object-fit:cover;border-radius:4p
 .card img.ph{aspect-ratio:16/8}
 .did img.ph{aspect-ratio:4/3}
 .feature img.ph{border-radius:0;aspect-ratio:1890/600;object-fit:contain;background:#fbfaf6;border-bottom:1px solid var(--line)}
+/* example photo badge */
+.phw{position:relative;display:block}
+.phw::after{content:"예시 사진";position:absolute;left:10px;top:10px;background:rgba(21,32,27,.78);color:#fff;font-size:11.5px;font-weight:600;padding:3px 8px;border-radius:3px;letter-spacing:0}
 /* campaign feature */
 .feature{display:grid;grid-template-columns:1fr;border:1px solid var(--ink);border-radius:6px;overflow:hidden;margin-bottom:24px}
 .feature .photo{border-radius:0;min-height:240px;height:100%}
@@ -256,7 +259,7 @@ footer b{color:var(--ink);font-size:14px}
         <span class="note" style="margin-top:14px">후원 버튼 링크는 버튼별로 관리자에서 변경 (UTM 부착 예정). 정기·일시 선택은 도너스 화면에서 / 텍스트 링크는 연구소 소개 페이지</span>
       </div>
       <div>
-        <img class="ph" src="images/hero.jpg" alt="광주에서 열린 2026 기후정책 대화에서 발표하는 녹색전환연구소 소장">
+        <span class="phw"><img class="ph" src="images/hero.jpg" alt="광주에서 열린 2026 기후정책 대화에서 발표하는 녹색전환연구소 소장"></span>
         <span class="note" style="margin-top:8px">관리자에서 사진 교체 (시안용 연구소 사진)</span>
       </div>
     </div>
@@ -278,7 +281,7 @@ footer b{color:var(--ink);font-size:14px}
       </div>
 
       <article class="feature" id="campaign">
-        <img class="ph" src="images/campaign-2030.jpg" alt="녹색전환연구소의 첫 캠페인, 프로젝트 2030">
+        <span class="phw"><img class="ph" src="images/campaign-2030.jpg" alt="녹색전환연구소의 첫 캠페인, 프로젝트 2030"></span>
         <div class="body">
           <span class="badge">NOW · 진행 중인 캠페인</span>
           <h3>프로젝트 2030</h3>
@@ -290,7 +293,7 @@ footer b{color:var(--ink);font-size:14px}
 
       <div class="products">
         <article class="card">
-          <img class="ph" src="images/fund-general.jpg" alt="연구실에서 일하는 연구원">
+          <span class="phw"><img class="ph" src="images/fund-general.jpg" alt="연구실에서 일하는 연구원"></span>
           <div class="kind">비지정 · 정기 / 일시</div>
           <h3>녹색전환기금</h3>
           <p>특정 사업을 정하지 않고 연구소 활동 전반에 쓰이는 후원입니다. 연구와 정책 제안, 시민 참여 활동, 연구 결과 공개에 사용합니다.</p>
@@ -306,7 +309,7 @@ footer b{color:var(--ink);font-size:14px}
         </article>
 
         <article class="card">
-          <img class="ph" src="images/fund-local.jpg" alt="녹색일자리 주제로 토론하는 참여자들">
+          <span class="phw"><img class="ph" src="images/fund-local.jpg" alt="녹색일자리 주제로 토론하는 참여자들"></span>
           <div class="kind">목적 지정 · 정기</div>
           <h3>지역전환촉진기금</h3>
           <p>지역에 협력연구원을 두고, 그 지역의 기후정책을 지역과 함께 만드는 데 쓰입니다. 지역 현장 조사, 지역 연구 활동, 지역 연구자·단체와의 협력에 사용합니다.</p>
@@ -338,9 +341,9 @@ footer b{color:var(--ink);font-size:14px}
         <div><div class="eyebrow">WHAT WE DID</div><h2>후원으로 이어진 일</h2></div>
       </div>
       <div class="did">
-        <article><img class="ph" src="images/did-assembly.jpg" alt="모두를 위한 기후시민의회 참여자들"><div class="tag">기후시민의회</div><h3>시민이 정한 기후정책의 우선순위</h3><p>시민이 기후정책의 우선순위를 직접 논의하는 기후시민의회를 설계하고 운영했습니다.</p></article>
-        <article><img class="ph" src="images/did-election.jpg" alt="기후위기를 대선 TV토론회 단일 의제로 요구하는 시민들"><div class="tag">대선 기후공약</div><h3>제안한 정책의 53%가 공약으로</h3><p>2025년 대선에 제안한 30대 기후정책 중 53%가 후보들의 공약에 직·간접적으로 반영됐습니다.</p></article>
-        <article><img class="ph" src="images/did-analysis.jpg" alt="연구 결과를 발표하는 연구원"><div class="tag">지자체 탄소중립계획 분석</div><h3>226개 지자체 계획을 전수 분석</h3><p>전국 226개 기초지자체의 탄소중립기본계획을 전수 분석해 지자체 계획 관리 방식의 변화를 이끌었습니다.</p></article>
+        <article><span class="phw"><img class="ph" src="images/did-assembly.jpg" alt="모두를 위한 기후시민의회 참여자들"></span><div class="tag">기후시민의회</div><h3>시민이 정한 기후정책의 우선순위</h3><p>시민이 기후정책의 우선순위를 직접 논의하는 기후시민의회를 설계하고 운영했습니다.</p></article>
+        <article><span class="phw"><img class="ph" src="images/did-election.jpg" alt="기후위기를 대선 TV토론회 단일 의제로 요구하는 시민들"></span><div class="tag">대선 기후공약</div><h3>제안한 정책의 53%가 공약으로</h3><p>2025년 대선에 제안한 30대 기후정책 중 53%가 후보들의 공약에 직·간접적으로 반영됐습니다.</p></article>
+        <article><span class="phw"><img class="ph" src="images/did-analysis.jpg" alt="연구 결과를 발표하는 연구원"></span><div class="tag">지자체 탄소중립계획 분석</div><h3>226개 지자체 계획을 전수 분석</h3><p>전국 226개 기초지자체의 탄소중립기본계획을 전수 분석해 지자체 계획 관리 방식의 변화를 이끌었습니다.</p></article>
       </div>
       <div class="actions" style="margin-top:28px"><a class="tlink" href="https://project2030.igt.or.kr/" target="_blank" rel="noopener">더 많은 활동 보기 ↗</a></div>
       <span class="note" style="margin-top:10px">카드는 관리자에서 교체 (태그, 제목, 한 줄 설명, 관련 링크, 사진). 문장은 연구소 검수 예정 / 링크는 프로젝트 2030</span>
